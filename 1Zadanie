@@ -1,0 +1,23 @@
+def dzielenie(dzielna, dzielnik):
+    if (dzielnik == 0):
+        return 
+    else:
+        return dzielna / dzielnik
+
+def suma(liczba1, liczba2):
+    return liczba1+liczba2
+def roznica(liczba1, liczba2):
+    return liczba1-liczba2
+def mnozenie(liczba1, liczba2):
+    return liczba1*liczba2
+
+a = int(input('Podaj liczbe: '))
+b = int(input('Podaj liczbe: '))
+
+print(suma(a,b))
+print(roznica(a,b))
+print(dzielenie(a,b))
+print(mnozenie(a,b))
+
+
+
