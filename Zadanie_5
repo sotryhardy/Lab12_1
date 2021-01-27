@@ -1,0 +1,15 @@
+def bmi(masa,wzrost):
+    wzrost = wzrost/100
+    s = masa/(wzrost*wzrost)
+    if s <= 18.5:
+        return "Masz niedowagę"
+    elif s > 18.5 and s <= 24.99:
+        return "Twoja waga jest prawidłowa"
+    else:
+        return "Masz nadwagę"
+
+
+print('Witam w programie "BMI"')
+a = float(input('Podaj wzrost: '))
+b = int(input('Podaj masę: '))
+print (bmi(b,a))
