@@ -1,0 +1,9 @@
+def kilometry(a):
+    return a*0.45
+
+h = float(input('Podaj wysokosc w stopniach: '))
+
+print("W kilometrach: ",kilometry(h))
+print("W metrach: ",kilometry(h)*1000)
+print("W santymetrach: ",kilometry(h)*100000)
+print("W milimetrach: ", kilometry(h)*10000000)
