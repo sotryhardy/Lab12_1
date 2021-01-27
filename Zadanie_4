@@ -1,0 +1,8 @@
+def det(a):   
+    if (a < 2500):
+        return a/1000,'km jest zanisko'
+    else:
+        return 'Wysokość jest normalna!'
+    
+a = int(input("Na jakiej wysokości lecimy?\n"))
+print (det(a))
