@@ -1,0 +1,84 @@
+
+
+def otv(n):
+    rym = 0
+    rym_s = ""
+    i = 1
+    rym2 = 0
+    j = 0
+    while n != 0:
+        rym = n % (10)
+        n = n // 10
+        rym2 = rym * i
+        i *= 10
+        if rym2 == 1:
+                rym_s = 'I' + rym_s
+        elif rym2 == 2:
+                rym_s = 'II'+ rym_s
+        elif rym2 == 3:
+            rym_s = 'III'+ rym_s
+        elif rym2 == 4:
+            rym_s = 'IV'+ rym_s
+        elif rym2 == 5:
+            rym_s = 'V'+ rym_s
+        elif rym2 == 6:
+            rym_s = 'VI'+ rym_s
+        elif rym2 == 7:
+            rym_s = 'VII'+ rym_s
+        elif rym2 == 8:
+            rym_s = 'VIII'+ rym_s
+        elif rym2 == 9:
+            rym_s = 'IX'+ rym_s
+        elif rym2 >= 10 and rym2 <20:
+            rym_s = 'X'+ rym_s
+        elif rym2 >= 20 and rym2 <30:
+            rym_s = 'XX'+ rym_s
+        elif rym2 >= 30 and rym2 <40:
+            rym_s = 'XXX'+ rym_s
+        elif rym2 >= 40 and rym2 <50:
+            rym_s = 'XL'+ rym_s
+        elif rym2 >= 50 and rym2 <60:
+            rym_s = 'L'+ rym_s
+        elif rym2 >= 60 and rym2 <70:
+           rym_s = 'LX'+ rym_s
+        elif rym2 >= 70 and rym2 <80:
+            rym_s = 'LXX'+ rym_s
+        elif rym2 >= 80 and rym2 <90:
+            rym_s = 'LXXX'+ rym_s
+        elif rym2 >= 90 and rym2 <100:
+            rym_s = 'XC'+ rym_s
+        elif rym2 >= 100 and rym2 <200:
+            rym_s = 'C'+ rym_s
+        elif rym2 >= 200 and rym2 <300:
+            rym_s = 'CC'+ rym_s
+        elif rym2 >= 300 and rym2 <400:
+            rym_s = 'CCC'+ rym_s
+        elif rym2 >= 400 and rym2 <500:
+            rym_s = 'CD'+ rym_s
+        elif rym2 >= 500 and rym2 <600:
+            rym_s = 'D'+ rym_s
+        elif rym2 >= 600 and rym2 <700:
+            rym_s = 'DC'+ rym_s
+        elif rym2 >= 700 and rym2 <800:
+            rym_s = 'DCC'+ rym_s
+        elif rym2 >= 800 and rym2 <900:
+            rym_s = 'DCCC'+ rym_s
+        elif rym2 >= 900 and rym2 <1000:
+            rym_s = 'CM'+ rym_s
+        elif rym2 >= 1000:
+            rym_s = 'M'+ rym_s
+        
+    return rym_s
+
+
+
+
+a = int(input('Podaj liczbę: '))
+print('****************')
+print(otv(a))
+print("****************")
+menu = int(input('Zwróć normalną liczbę?\n 1 - Tak \n 2- Nie \n'))
+if menu == 1:
+    print(" ",a)
+elif menu == 2:
+    print(" Okej")
